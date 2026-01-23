@@ -1,0 +1,107 @@
+.section {
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 48px;
+}
+
+.title span {
+  color: var(--color-accent-deep);
+  background: var(--color-accent-soft);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+/* =====================
+   GRID
+===================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+/* =====================
+   CARD
+===================== */
+
+.card {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  transition: background 0.25s ease;
+}
+
+.card:hover {
+  background: var(--color-bg-soft);
+}
+.card:hover .image{
+    transform: scale(1.02);
+    filter: saturate(1) contrast(1);
+}
+.card:hover h3{
+    color: var(--color-accent-deep);
+}
+/* =====================
+   IMAGE
+===================== */
+
+.imageWrap {
+  position: relative;
+  height: 220px;
+}
+
+.image {
+  object-fit: cover;
+  filter: saturate(0.95) contrast(0.98);
+  transition: transform 0.3s ease ,filter 0.3s ease;
+}
+
+/* =====================
+   TEXT
+===================== */
+
+.content {
+  padding: 20px 22px 26px;
+}
+
+.content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.content p {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .imageWrap {
+    height: 200px;
+  }
+}

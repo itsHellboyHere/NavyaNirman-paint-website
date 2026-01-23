@@ -1,0 +1,140 @@
+.footer {
+  background: #ffffff;
+  border-top: 1px solid var(--color-border);
+  padding: 80px 0 32px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+}
+
+/* =====================
+   COLUMNS
+===================== */
+
+.col h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  position: relative;
+}
+.col h4::after{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: -3px;
+    width: 26px;
+    height: 1.5px;
+    background: var(--color-border);
+}
+.col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.col li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.col a {
+  text-decoration: none;
+  color: var(--color-text-muted);
+}
+
+.col a:hover {
+  color: var(--color-text);
+}
+
+/* =====================
+   BRAND
+===================== */
+
+.brand {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.brand span {
+  color: var(--color-accent-deep);
+}
+.brandWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.brandLogo {
+  width: 56px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.desc {
+  margin: 12px 0 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  max-width: 320px;
+}
+
+/* =====================
+   CONTACT
+===================== */
+
+.contact li {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.subtle {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+/* =====================
+   BOTTOM BAR
+===================== */
+
+.bottom {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .bottom {
+    text-align: center;
+    margin-left: 0;
+  }
+   .brandWrap {
+    gap: 10px;
+  }
+
+  .brandLogo {
+    width: 32px;
+    height: 32px;
+  }
+}

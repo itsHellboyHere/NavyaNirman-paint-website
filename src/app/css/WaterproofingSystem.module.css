@@ -1,0 +1,145 @@
+.section {
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 60px;
+}
+
+.heading span {
+  color: var(--color-accent-deep);
+  background: var(--color-accent-soft);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  height: 420px;
+  border-radius: 28px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #eee;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* DARK OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.15)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* CONTENT */
+.content {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  right: 32px;
+  color: #fff;
+  z-index: 2;
+
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.content p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* ACTION BUTTON */
+.action {
+  margin-top: 18px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: 360px;
+  }
+  .overlay {
+    opacity: 1;
+  }
+
+  .content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card {
+    transform: none;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+  }
+
+  .card:hover {
+    transform: none;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+  }
+  .overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.3)
+    );
+  }
+}

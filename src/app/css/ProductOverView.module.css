@@ -1,0 +1,157 @@
+.section {
+  padding: 110px 0;
+  background: #ffffff;
+  border-top: 1px solid var(--color-border);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 72px;
+  align-items: flex-start;
+}
+
+/* LEFT TEXT */
+.text {
+  position: relative;
+  padding-left: 28px;
+}
+
+/* Vertical accent */
+.text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 3px;
+  height: 72px;
+  background: var(--color-accent-soft);
+  border-radius: 2px;
+}
+
+/* Eyebrow */
+.eyebrow {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.text h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* Lead sentence */
+.lead {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 26px;
+  max-width: 640px;
+}
+
+/* Body */
+.body p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-text-muted);
+  max-width: 640px;
+  white-space: pre-line;
+}
+
+/* RIGHT FEATURES CARD */
+.features {
+  background: #f9fafb;
+  border-radius: 18px;
+  padding: 36px;
+  border: 1px solid var(--color-border);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.features:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.06);
+}
+
+.features h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  font-size: 14.5px;
+  color: var(--color-text);
+  margin-bottom: 14px;
+  padding-left: 26px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-deep);
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .text {
+    padding-left: 0;
+  }
+
+  .text::before {
+    display: none;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 72px 0;
+  }
+
+  .lead {
+    font-size: 17px;
+  }
+
+  .body p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .features {
+    padding: 28px;
+  }
+}

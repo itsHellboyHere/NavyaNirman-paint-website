@@ -1,0 +1,150 @@
+.section{
+    padding: 120px 0;
+    background: var(--color-accent-soft);
+}
+.inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.title span {
+  color: var(--color-accent-deep);
+  background: rgba(37, 99, 235, 0.12);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+.arrows{
+    display: flex;
+    gap:12px;
+}
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    background: #fff;
+    cursor: pointer;
+    font-size: 17px;
+}
+.arrows button:hover{
+    background: #000;
+    color: #fff;
+}
+/* =====================
+   FEATURED CARD
+===================== */
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px 72px 48px 48px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  overflow: visible;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.content h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+.content p {
+  margin-top: 12px;
+  max-width: 360px;
+  color: var(--color-text-muted);
+}
+
+.link {
+  margin-top: 24px;
+  display: inline-block;
+  font-weight: 500;
+  color: var(--color-accent);
+  position: relative;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1.5px;
+  background: var(--color-accent);
+  transition: width 0.25s ease;
+}
+
+
+/* =====================
+   IMAGE OVERLAP
+===================== */
+
+.imageWrap {
+  position: relative;
+  height: 300px;
+  margin-left: 32px;
+  overflow: visible;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 16px;
+  /* object-position: center; */
+  transform: translateX(40px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+.card:hover .image{
+    transform: translateX(40px) translateY(-4px);
+    transition: transform 0.25s ease;
+}
+
+.card:hover .link::after {
+  width: 100%;
+}
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 900px) {
+  .card {
+    grid-template-columns: 1fr;
+    padding: 32px;
+  }
+
+  .imageWrap {
+    height: 220px;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+
+  .image {
+    transform: none !important;
+    
+  }
+  .card:hover .image {
+    transform: none;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
