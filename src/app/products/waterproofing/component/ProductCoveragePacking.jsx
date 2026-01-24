@@ -17,15 +17,27 @@ export default function ProductCoveragePacking({ coverage, packing }) {
               <h3>Coverage</h3>
             </div>
 
-            <div className={styles.coverageRow}>
-              <span>Horizontal</span>
-              <strong>{coverage.horizontal}</strong>
-            </div>
+            {/* Penetrative products */}
+            {coverage.horizontal || coverage.vertical && (
+              <>
+                <div className={styles.coverageRow}>
+                  <span>Horizontal</span>
+                  <strong>{coverage.horizontal}</strong>
+                </div>
 
-            <div className={styles.coverageRow}>
-              <span>Vertical</span>
-              <strong>{coverage.vertical}</strong>
-            </div>
+                <div className={styles.coverageRow}>
+                  <span>Vertical</span>
+                  <strong>{coverage.vertical}</strong>
+                </div>
+              </>
+            )}
+
+            {/* Elastomeric membrane products */}
+            {coverage.value && (
+              <div className={styles.coverageValue}>
+                <strong>{coverage.value}</strong>
+              </div>
+            )}
 
             {coverage.note && (
               <p className={styles.note}>

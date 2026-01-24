@@ -89,7 +89,7 @@ export default function WaterproofingProducts() {
 
                 <div className={styles.cardFooter}>
                   <Link
-                    href={`/waterproofing/${item.slug}`}
+                    href={`/products/waterproofing/${item.slug}`}
                     className={styles.btn}
                   >
                     View Details →

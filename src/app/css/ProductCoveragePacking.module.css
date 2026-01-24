@@ -61,7 +61,12 @@
 .coverageRow span {
   color: var(--color-text-muted);
 }
-
+.coverageValue {
+  font-size: 15px;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-top: 8px;
+}
 .note {
   margin-top: 16px;
   font-size: 13px;

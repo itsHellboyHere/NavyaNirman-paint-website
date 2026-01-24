@@ -2,14 +2,32 @@
 import styles from "@/app/css/WhyChooseUs.module.css";
 import { useInView } from "@/app/hooks/useInView";
 
+function FeatureCard({ title, desc }) {
+  const { ref, inView } = useInView({ threshold: 0.25 });
+
+  return (
+    <div
+      ref={ref}
+      className={`${styles.card} ${inView ? styles.inView : ""}`}
+    >
+      <h3>{title}</h3>
+      <p>{desc}</p>
+    </div>
+  );
+}
+
 export default function WhyChooseUs() {
   const { ref, inView } = useInView();
 
   return (
-    <section className={styles.section} ref={ref}>
+    <section className={styles.section}>
       <div className={styles.inner}>
+        
         {/* LEFT */}
-        <div className={`${styles.left} ${styles.fadeUp} ${inView ? styles.inView : ""}`}>
+        <div
+          ref={ref}
+          className={`${styles.left} ${inView ? styles.inView : ""}`}
+        >
           <h2 className={styles.title}>
             Why Choose <span>NavyyaNirman</span>
           </h2>
@@ -23,25 +41,25 @@ export default function WhyChooseUs() {
 
         {/* RIGHT */}
         <div className={styles.right}>
-          <div className={`${styles.card} ${styles.fadeUp} ${styles.delay1} ${inView ? styles.inView : ""}`}>
-            <h3>System-Based Solutions</h3>
-            <p>Products designed to work together, ensuring consistent performance.</p>
-          </div>
+          <FeatureCard
+            title="System-Based Solutions"
+            desc="Products designed to work together, ensuring consistent performance."
+          />
 
-          <div className={`${styles.card} ${styles.fadeUp} ${styles.delay2} ${inView ? styles.inView : ""}`}>
-            <h3>Proven Durability</h3>
-            <p>Long service life with resistance to peeling, fading, and dirt pickup.</p>
-          </div>
+          <FeatureCard
+            title="Proven Durability"
+            desc="Long service life with resistance to peeling, fading, and dirt pickup."
+          />
 
-          <div className={`${styles.card} ${styles.fadeUp} ${styles.delay3} ${inView ? styles.inView : ""}`}>
-            <h3>Climate & Surface Ready</h3>
-            <p>Engineered for Indian climate conditions and mineral substrates.</p>
-          </div>
+          <FeatureCard
+            title="Climate & Surface Ready"
+            desc="Engineered for Indian climate conditions and mineral substrates."
+          />
 
-          <div className={`${styles.card} ${styles.fadeUp} ${styles.delay4} ${inView ? styles.inView : ""}`}>
-            <h3>Advanced Waterproofing</h3>
-            <p>Breathable, penetrative, and elastomeric protection systems.</p>
-          </div>
+          <FeatureCard
+            title="Advanced Waterproofing"
+            desc="Breathable, penetrative, and elastomeric protection systems."
+          />
         </div>
       </div>
     </section>

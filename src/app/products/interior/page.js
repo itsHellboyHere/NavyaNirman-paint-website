@@ -1,0 +1,32 @@
+import InteriorHero from "@/app/components/products/interior/InteriorHero";
+import InteriorProduct from "@/app/components/products/interior/InteriorProduct";
+
+export default function Page() {
+  return (
+    <>
+      <InteriorHero />
+      <InteriorProduct
+        align="left"
+        title="Premium Matt"
+        subtitle="Timeless matt finish for modern interiors"
+        description="Premium Matt is crafted for spaces that value balance and subtle elegance. Its smooth, low-sheen finish minimizes glare while enhancing wall depth, creating interiors that feel calm and refined."
+        image="/interior/matt.webp"
+      />
+
+      <InteriorProduct
+        align="right"
+        title="Marvella Luxury"
+        subtitle="Silk-smooth elegance with a refined glow"
+        description="Marvella Luxury delivers a graceful sheen that elevates premium interiors. Its silky finish reflects light softly, adding richness and depth to statement spaces."
+        image="/interior/luxury.webp"
+      />
+      <InteriorProduct
+        align="left"
+        title="Premium Wall Primer"
+        subtitle="The essential base for flawless interior finishes"
+        description="Premium Wall Primer is a water-based acrylic primer designed to prepare interior surfaces for long-lasting paint performance. It ensures uniform absorption, improves paint adhesion, and creates a smooth, consistent base—allowing top coats to achieve their true finish and durability."
+        image="/interior/primer.webp"
+      />
+    </>
+  )
+}

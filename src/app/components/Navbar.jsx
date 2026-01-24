@@ -86,7 +86,7 @@ export default function Navbar() {
 
                                 <div className={styles.megaCol}>
                                     <h4>Protection</h4>
-                                    <Link href="/waterproofing">Waterproofing Systems</Link>
+                                    <Link href="/products/waterproofing">Waterproofing Systems</Link>
                                     {/* <Link href="/products/preparation">Surface Preparation</Link> */}
                                 </div>
                             </div>
@@ -95,8 +95,8 @@ export default function Navbar() {
 
                     <li>
                         <Link
-                            href="/waterproofing"
-                            className={`${styles.link} ${pathname === "/waterproofing" ? styles.active : ""}`}
+                            href="/products/waterproofing"
+                            className={`${styles.link} ${pathname === "/products/waterproofing" ? styles.active : ""}`}
                         >
                             Waterproofing
                         </Link>
@@ -143,12 +143,12 @@ export default function Navbar() {
                         <div className={styles.mobileSub}>
                             <Link href="/products/interior">Interior Paints</Link>
                             <Link href="/products/exterior">Exterior Paints</Link>
-                            <Link href="/waterproofing">Waterproofing</Link>
+                            <Link href="/products/waterproofing">Waterproofing</Link>
                             {/* <Link href="/products/preparation">Surface Preparation</Link> */}
                         </div>
                     )}
 
-                    <Link href="/waterproofing">Waterproofing</Link>
+                    <Link href="/products/waterproofing">Waterproofing</Link>
                     <Link href="/about">About</Link>
 
                     <Link href="/contact" className={styles.cta}>

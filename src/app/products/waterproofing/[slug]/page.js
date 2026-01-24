@@ -1,6 +1,6 @@
 // src/app/waterproofing/[slug]/page.jsx
 
-import { waterproofingProducts } from "@/app/waterproofing/[slug]/data/products";
+import { waterproofingProducts } from "@/app/products/waterproofing/[slug]/data/products";
 import { notFound } from "next/navigation";
 import ProductDetail from "../component/ProducDetial";
 

@@ -1,8 +1,8 @@
-import Applications from "../components/Application";
-import WaterproofingHero from "../components/waterproofing/WaterproofingHero";
-import WaterproofingProducts from "../components/waterproofing/WaterproofingProducts";
-import WaterproofingSystem from "../components/waterproofing/WaterproofingSystem";
-import WaterproofingTechnology from "../components/waterproofing/WaterproofingTechnology";
+
+import WaterproofingHero from "@/app/components/waterproofing/WaterproofingHero";
+import WaterproofingProducts from "@/app/components/waterproofing/WaterproofingProducts";
+import WaterproofingSystem from "@/app/components/waterproofing/WaterproofingSystem";
+import WaterproofingTechnology from "@/app/components/waterproofing/WaterproofingTechnology"
 
 
 export const metadata = {

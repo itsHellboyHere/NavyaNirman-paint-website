@@ -34,7 +34,7 @@ export default function Footer() {
           <ul>
             <li><Link href="/products/interior">Interior Paints</Link></li>
             <li><Link href="/products/exterior">Exterior Paints</Link></li>
-            <li><Link href="/waterproofing">Waterproofing</Link></li>
+            <li><Link href="/products/waterproofing">Waterproofing</Link></li>
           </ul>
         </div>
 
