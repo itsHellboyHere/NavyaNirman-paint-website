@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Navvya Nirman Company",
+  title: "Navyya Nirman Company",
   description: "Waterproofing & Construction Solutions",
   icons: {
     icon: [
