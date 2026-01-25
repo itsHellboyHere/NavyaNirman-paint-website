@@ -15,7 +15,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   
 }
 
@@ -24,8 +24,8 @@
   z-index: 2;
 }
 .logoIcon {
-  width: 64px;
-  height: 52px;
+  width: 52px;
+  height: 44px;
   object-fit: contain;
 }
 .logoTextWrap {
@@ -261,7 +261,9 @@
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
   }
-
+  .navInner {
+    padding: 14px 20px;
+  }
   .mobileLink:hover,
   .mobileActive {
     color: #000;
