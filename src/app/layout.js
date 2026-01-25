@@ -12,7 +12,8 @@ const inter = Inter({
 
 export const metadata = {
   title: "Navyya Nirman Company",
-  description: "Waterproofing & Construction Solutions",
+  template: "%s | Navyya Nirman",
+  description: "Paint & Waterproofing Solutions",
   icons: {
     icon: [
       { url: "/brand/favicon.ico" },

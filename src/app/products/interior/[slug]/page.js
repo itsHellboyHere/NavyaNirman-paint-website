@@ -12,6 +12,19 @@ import InteriorProductSpecifications from "../components/InteriorProductSpecific
 import InteriorProductApplication from "../components/InteriorProductApplication";
 // import InteriorFinishExplorer from "../components/InteriorFinishExplorer";
 
+export async function generateMetadata({ params }) {
+  const {slug} = await params;
+  const product = interiorProducts.find(
+    (p) => p.slug === slug
+  );
+
+  if (!product) return {};
+
+  return {
+    title: `${product.name} | Interior Paints`,
+    description: product.shortDesc,
+  };
+}
 
 export default async function InteriorProductPage({ params }) {
 const { slug } = await params; 

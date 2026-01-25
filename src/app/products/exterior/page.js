@@ -1,6 +1,35 @@
 import ExteriorProduct from "@/app/components/products/exterior/ExteriorProduct";
 import ExteriorHero from "@/app/components/products/exterior/ExteriorHero";
 
+export const metadata = {
+  title: "Exterior Paints & Wall Coatings | Navyya Nirman",
+  description:
+    "High-performance exterior paints engineered for durability, colour stability, and long-lasting protection. Explore mineral and premium exterior paint systems by Navyya Nirman.",
+
+  keywords: [
+    "exterior paints",
+    "exterior wall paint",
+    "outside wall paint",
+    "mineral exterior paint",
+    "weather resistant paint",
+    "Navyya Nirman exterior paints",
+  ],
+
+  openGraph: {
+    title: "Exterior Paints | Navyya Nirman",
+    description:
+      "Premium exterior paint systems offering long-term protection, breathability, and refined mineral finishes.",
+    url: "https://navvyanirman.com/products/exterior",
+    siteName: "Navyya Nirman",
+    locale: "en_IN",
+    type: "website",
+  },
+
+  alternates: {
+    canonical: "/products/exterior",
+  },
+};
+
 export default function Page() {
   return (
     <>

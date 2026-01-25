@@ -1,5 +1,33 @@
 import InteriorHero from "@/app/components/products/interior/InteriorHero";
 import InteriorProduct from "@/app/components/products/interior/InteriorProduct";
+export const metadata = {
+  title: "Interior Paints & Wall Finishes | Navyya Nirman",
+  description:
+    "Premium interior wall paints and primers designed for smooth finishes, durability, and elegant living spaces. Explore interior paint systems by Navyya Nirman.",
+
+  keywords: [
+    "interior paints",
+    "wall paints",
+    "interior wall finishes",
+    "premium interior paint",
+    "home interior paint",
+    "Navyya Nirman interior paints",
+  ],
+
+  openGraph: {
+    title: "Interior Paints | Navyya Nirman",
+    description:
+      "Explore premium interior paints and primers crafted for smooth, durable and elegant wall finishes.",
+    url: "https://navvyanirman.com/products/interior",
+    siteName: "Navyya Nirman",
+    locale: "en_IN",
+    type: "website",
+  },
+
+  alternates: {
+    canonical: "/products/interior",
+  },
+};
 
 export default function Page() {
   return (

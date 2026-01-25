@@ -20,7 +20,7 @@ export const metadata = {
   ],
 
   openGraph: {
-    title: "Waterproofing Systems & Solutions | Navvya Nirman",
+    title: "Waterproofing | Navvya Nirman",
     description:
       "High-performance waterproofing products and systems designed for durability and long-term protection.",
     url: "https://navvyanirman.com/waterproofing",

@@ -11,6 +11,20 @@ import ExteriorProductApplication from "./components/ExteriorProductApplication"
 import ProductCTA from "../../waterproofing/component/ProductCTA";
 
 
+export async function generateMetadata({ params }) {
+  const {slug} = await params;
+  const product = exteriorProducts.find(
+    (p) => p.slug === slug
+  );
+
+  if (!product) return {};
+
+  return {
+    title: `${product.name} | Exterior Paints`,
+    description: product.shortDesc,
+  };
+}
+
 export default async function ExteriorProductPage({ params }) {
 const { slug } = await params; 
 
