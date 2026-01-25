@@ -19,9 +19,9 @@ export default function FinalCTA() {
                         Get Technical Consultation
                     </Link>
 
-                    <Link href="/products" className={styles.secondaryBtn}>
-                        View Product Range
-                    </Link>
+                     <Link href="/products/interior" className={styles.secondaryBtn}>
+    Explore Paint Systems
+  </Link>
                 </div>
             </div>
         </section>

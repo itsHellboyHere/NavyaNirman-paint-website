@@ -3,6 +3,7 @@
 import { waterproofingProducts } from "@/app/products/waterproofing/[slug]/data/products";
 import { notFound } from "next/navigation";
 import ProductDetail from "../component/ProducDetial";
+import ScrollReset from "@/app/components/common/ScrollReset";
 
 export default async function ProductPage({ params }) {
   const { slug } = await params; 
@@ -15,5 +16,10 @@ export default async function ProductPage({ params }) {
     notFound();
   }
 
-  return <ProductDetail product={product} />;
+  return (
+    <>
+      <ScrollReset />
+      <ProductDetail product={product} />
+    </>
+  );
 }

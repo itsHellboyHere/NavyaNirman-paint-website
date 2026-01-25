@@ -8,7 +8,7 @@ export default function Hero() {
             {/* Left content */}
             <div className={styles.content}>
                 <h1 className={`${styles.title} ${styles.fadeUp} ${styles.delay1}`}>
-                    Smart Paint & <span>Waterproofing</span> Solutions
+                    Paint & <span>Waterproofing</span> Solutions
                 </h1>
 
                 <p className={`${styles.subtitle} ${styles.fadeUp} ${styles.delay2}`}>
@@ -17,8 +17,8 @@ export default function Hero() {
                 </p>
 
                 <div className={`${styles.actions} ${styles.fadeUp} ${styles.delay3}`}>
-                    <Link href="/products" className={styles.primaryBtn}>
-                        View Products
+                    <Link href="/products/interior" className={styles.primaryBtn}>
+                        Explore Paint Systems
                     </Link>
 
                     <Link href="/contact" className={styles.secondaryBtn}>

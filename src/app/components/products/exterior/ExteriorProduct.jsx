@@ -1,7 +1,7 @@
 "use client";
-import styles from "@/app/css/products_paints/InteriorProduct.module.css";
+import styles from "@/app/css/products_paints/ExteriorProduct.module.css";
 import { useInView } from "@/app/hooks/useInView";
-export default function InteriorProduct({
+export default function ExteriorProduct({
   slug,
   align = "left",
   title,
@@ -24,7 +24,7 @@ export default function InteriorProduct({
           <h4>{subtitle}</h4>
           <p>{description}</p>
           <a
-            href={`/products/interior/${slug}`}
+            href={`/products/exterior/${slug}`}
             className={styles.cta}
             aria-label={`Explore ${title}`}
           >

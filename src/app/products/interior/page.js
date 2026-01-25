@@ -6,6 +6,7 @@ export default function Page() {
     <>
       <InteriorHero />
       <InteriorProduct
+        slug="premium-matt"
         align="left"
         title="Premium Matt"
         subtitle="Timeless matt finish for modern interiors"
@@ -14,6 +15,7 @@ export default function Page() {
       />
 
       <InteriorProduct
+      slug="marvella-luxury"
         align="right"
         title="Marvella Luxury"
         subtitle="Silk-smooth elegance with a refined glow"
@@ -21,6 +23,7 @@ export default function Page() {
         image="/interior/luxury.webp"
       />
       <InteriorProduct
+      slug="premium-wall-primer"
         align="left"
         title="Premium Wall Primer"
         subtitle="The essential base for flawless interior finishes"

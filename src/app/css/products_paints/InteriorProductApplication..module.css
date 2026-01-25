@@ -1,0 +1,99 @@
+.section {
+  padding: 110px 0;
+  background: linear-gradient(
+    135deg,
+    #1e3a8a 0%,
+    #2b5fd9 45%,
+    #274fcf 100%
+  );
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 42px;
+  letter-spacing: -0.02em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.94); 
+  border-radius: 14px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+  backdrop-filter: saturate(120%) blur(2px);
+}
+
+.application {
+  grid-column: span 1;
+}
+
+.card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #334155;
+}
+
+.note {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.packing {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.packing li {
+  font-size: 14px;
+  padding: 6px 0;
+  color: #475569;
+}
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #1e40af; 
+  flex-shrink: 0;
+  background: rgba(30, 64, 175, 0.12);
+  padding: 6px;
+  border-radius: 8px;
+}
+/* Mobile */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+}

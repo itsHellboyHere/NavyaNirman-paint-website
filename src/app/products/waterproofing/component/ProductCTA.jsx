@@ -9,8 +9,26 @@ export default function ProductCTA({ product }) {
   const [status, setStatus] = useState("idle");
   const pathname = usePathname();
 
+  const category = product?.category?.toLowerCase() || "";
+
+  const isWaterproofing = category.includes("waterproof");
+  const isExterior = category.includes("exterior");
+  const isInterior = category.includes("interior");
+
+  const titleText = "Need expert guidance?";
+
+  const descriptionText = isWaterproofing
+    ? "Our waterproofing specialists will help you choose the right solution for your application."
+    : isExterior
+    ? "Our coating experts will help you select the right exterior paint system for long-term protection."
+    : "Our paint experts will help you choose the perfect finish for your interior spaces.";
+
   const whatsappMessage = encodeURIComponent(
-    `Hi, I'm interested in ${product.name}. Please guide me with the right waterproofing solution.`
+    isWaterproofing
+      ? `Hi, I'm interested in ${product.name}. Please guide me with the right waterproofing solution.`
+      : isExterior
+      ? `Hi, I'm interested in ${product.name}. Please guide me with the right exterior paint system.`
+      : `Hi, I'm interested in ${product.name}. Please guide me with the right interior paint solution.`
   );
 
   async function handleSubmit(formData) {
@@ -25,18 +43,17 @@ export default function ProductCTA({ product }) {
   }
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="product-cta">
       <div className={styles.container}>
         <div className={styles.card}>
 
+          {/* TEXT */}
           <div className={styles.text}>
-            <h2>Need expert guidance?</h2>
-            <p>
-              Our waterproofing specialists will help you choose the right
-              solution for your application.
-            </p>
+            <h2>{titleText}</h2>
+            <p>{descriptionText}</p>
           </div>
 
+          {/* FORM / SUCCESS */}
           {status === "success" ? (
             <div className={styles.success}>
               <h3>Thank you!</h3>
