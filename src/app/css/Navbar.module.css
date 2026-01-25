@@ -218,21 +218,21 @@
 }
 
 
-.mobileLink.active {
+.mobileActive {
   color: #000;
   font-weight: 600;
   position: relative;
 }
 
-.mobileLink.active::before {
+.mobileActive::before {
   content: "";
   position: absolute;
-  left: -12px;
+  left: -10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 4px;
-  height: 4px;
-  background: #000;
+  width: 5px;
+  height: 5px;
+  background: var(--color-accent-deep);
   border-radius: 50%;
 }
 
@@ -335,6 +335,12 @@
 .megaCol a:hover {
   color: var(--color-text);
   transform: translateX(2px);
+}
+
+@media (hover: none) {
+  .link:hover::after {
+    width: 0;
+  }
 }
 
 /* =====================

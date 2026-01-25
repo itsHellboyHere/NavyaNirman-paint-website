@@ -10,6 +10,7 @@ import InteriorProductOverview from "../components/InteriorProductOverview";
 import InteriorProductFeatures from "../components/InteriorProductFeature";
 import InteriorProductSpecifications from "../components/InteriorProductSpecification";
 import InteriorProductApplication from "../components/InteriorProductApplication";
+// import InteriorFinishExplorer from "../components/InteriorFinishExplorer";
 
 
 export default async function InteriorProductPage({ params }) {
@@ -30,6 +31,7 @@ const { slug } = await params;
     <InteriorProductFeatures product={product} />
     <InteriorProductSpecifications product={product} />
     <InteriorProductApplication product={product} />
+    {/* <InteriorFinishExplorer /> */}
     <ProductCTA product={product} />
     </>
   );
