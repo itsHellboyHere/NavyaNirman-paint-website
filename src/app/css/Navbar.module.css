@@ -15,12 +15,13 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0px;
 }
 
 .logoText {
   position: relative;
   z-index: 2;
+  margin-left: -5px;
 }
 .logoIcon {
   width: 52px;
@@ -33,6 +34,7 @@
   position: relative;
   display: inline-flex;
   align-items: center;
+  /* margin-left: -4px; */
 }
 .dripContainer {
   position: absolute;
@@ -273,7 +275,7 @@
     color: #000;
   }
   .logoWrapper{
-    gap: 0px;
+    gap: 2px;
   }
   .logo{
     font-size: 16px;

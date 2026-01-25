@@ -62,6 +62,7 @@
   font-size: 20px;
   font-weight: 600;
   color: var(--color-text);
+  margin-left: -6px;
 }
 
 .brand span {
@@ -70,13 +71,15 @@
 .brandWrap {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0px;
   margin-bottom: 8px;
+ 
 }
 
 .brandLogo {
-  width: 56px;
-  height: 46px;
+  
+  width: 46px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -130,7 +133,7 @@
     margin-left: 0;
   }
    .brandWrap {
-    gap: 10px;
+    gap: 4px;
   }
 
   .brandLogo {
