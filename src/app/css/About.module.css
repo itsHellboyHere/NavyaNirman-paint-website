@@ -1,0 +1,222 @@
+.section {
+  padding: 120px 0;
+  background:
+    radial-gradient(
+      at top left,
+      rgba(30, 64, 175, 0.06),
+      transparent 45%
+    ),
+    radial-gradient(
+      at bottom right,
+      rgba(14, 165, 233, 0.06),
+      transparent 45%
+    ),
+    #ffffff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* =====================
+   HERO
+===================== */
+
+.hero {
+  margin-bottom: 96px;
+}
+
+.heroCard {
+  position: relative;
+  padding: 64px 56px;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.08);
+}
+
+.heroCard::before {
+  content: "ABOUT NAVYYA NIRMAN";
+  position: absolute;
+  top: -14px;
+  left: 48px;
+  padding: 6px 14px;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  background: #ffffff;
+  color: var(--color-text-muted);
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
+.heroCard::after {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 48px;
+  width: 140px;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(30, 64, 175, 0.4),
+    transparent
+  );
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: var(--color-text);
+  max-width: 620px;
+}
+
+.hero h1 span {
+  color: var(--color-accent-deep);
+  background: rgba(30, 64, 175, 0.08);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  max-width: 640px;
+}
+
+/* =====================
+   CONTENT BLOCKS
+===================== */
+
+.content {
+  display: grid;
+  gap: 72px;
+}
+
+.block h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.block h2 svg {
+  color: var(--color-accent-deep);
+  font-size: 18px;
+}
+
+.block p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  max-width: 720px;
+}
+
+.block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.block li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: var(--color-text-muted);
+}
+
+.block li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-deep);
+}
+
+/* =====================
+   CTA
+===================== */
+
+.cta {
+  margin-top: 32px;
+  padding: 48px 40px;
+  border-radius: 18px;
+  background: #f9fafb;
+  border: 1px solid var(--color-border);
+}
+
+.ctaIcon {
+  font-size: 22px;
+  color: var(--color-accent-deep);
+  margin-bottom: 12px;
+}
+
+.cta h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.cta p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  max-width: 680px;
+}
+
+.ctaLink {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-accent-deep);
+  text-decoration: none;
+  position: relative;
+}
+
+.ctaLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1.5px;
+  background: currentColor;
+  opacity: 0.3;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.ctaLink:hover::after {
+  opacity: 0.6;
+  transform: translateX(2px);
+}
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .heroCard {
+    padding: 48px 28px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .content {
+    gap: 56px;
+  }
+}

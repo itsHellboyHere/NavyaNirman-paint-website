@@ -61,7 +61,20 @@ export default function Footer() {
 
       {/* BOTTOM */}
       <div className={styles.bottom}>
-        © {new Date().getFullYear()} NavyyaNirman Company. All rights reserved.
+        <span>
+          © {new Date().getFullYear()} Navyya Nirman Company. All rights reserved.
+        </span>
+
+        <span className={styles.dev}>
+          Developed by{" "}
+          <a
+            href="https://creatormonk.in"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CreatorMonk
+          </a>
+        </span>
       </div>
     </footer>
   );
