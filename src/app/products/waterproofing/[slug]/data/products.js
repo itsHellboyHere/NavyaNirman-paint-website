@@ -1,163 +1,161 @@
 export const waterproofingProducts = [
-  {
-    slug: "zycosil-plus",
-    name: "ZycoSil+",
-    category: "Penetrative Waterproofing",
-    shortDesc:
-      "Reactive organosilane based waterproofing technology that seals nano-pores permanently.",
+{
+  slug: "zycosil-plus",
+  name: "ZycoSil+",
+  category: "Penetrative Waterproofing",
+  shortDesc:
+    "Reactive organosilane based waterproofing technology that seals nano-pores permanently.",
 
-    heroImage: "/waterproofing/zydex-zycosil-plus.webp",
+  heroImage: "/waterproofing/Zycosil.jpg",
 
-    overview: `
-ZycoSil+ is a reactive organosilane based waterproofing agent that seals up to nano-pore level.
-It has the ability to penetrate deep inside the substrate and becomes a permanent integral
-part of the structure.
+  overview: `
+ZycoSil+ is a reactive organosilane based waterproofing agent that seals upto nano-pore level.
+It has an ability to penetrate upto 2 mm deep inside the substrate and becomes a permanent
+integral part of the structure.
 
 It reacts and converts the hydrophilic chemical groups of the substrate into hydrophobic
 groups. ZycoSil+ is water dilutable, safe, sprayable and easy to apply.
 
 ZycoSil+ is non-leachable, UV resistant, breathable and does not present peel-off issues
 unlike conventional polymer coatings.
-    `.trim(),
-
-    keyFeatures: [
-      "Organosilane Technology",
-      "Reactive, Penetrative & Permanent",
-      "Easy to Apply",
-      "Breathable & UV Resistant",
-      "Non-leachable & Peel-free",
-      "Protects against algae and fungal growth",
-      "Waterproofs vertical and horizontal surfaces",
-      "Protects substrate from weathering deterioration"
-    ],
-
-    specifications: [
-      { label: "Form", value: "Light Pale Yellow Clear Liquid" },
-      { label: "Viscosity @ 25°C", value: "< 100 cps" },
-      { label: "Specific Gravity", value: "0.91 ± 0.01" },
-      { label: "Flash Point", value: "12°C" },
-      { label: "Odour", value: "Low Odour" },
-      { label: "Solubility (in Water)", value: "Easily Soluble" },
-      { label: "pH", value: "Approx. 6 ± 1" },
-      {
-        label: "Dilutant",
-        value: "Clean potable water (TDS < 1000)"
-      },
-      { label: "Application pH", value: "6.5 – 7" }
-    ],
-
-    coverage: {
-      horizontal: "24–40 m² (260–430 ft²)",
-      vertical: "60–100 m² (645–1075 ft²)",
-      note:
-        "Actual coverage may vary depending on surface porosity and absorption characteristics."
-    },
-
-    packing: ["100ml", "250ml", "1L", "5L", "20L"],
-
-    applications: [
-      "Terraces",
-      "External walls",
-      "Concrete structures",
-      "Masonry surfaces"
-    ]
-  },
-  {
-    slug: "zycoprime-plus",
-    name: "ZycoPrime+",
-    category: "Sealing & Bonding Agent",
-    shortDesc:
-      "Acrylic based sealing, bonding & cement admixture agent with excellent wet adhesion.",
-
-    heroImage: "/waterproofing/zydex-zycoprime-plus.webp",
-
-    overview: `
-ZycoPrime+ is an acrylic co-polyer eulsion supplied as a ready to use bonding agent with superior wet adhesion and universal copatibility. 
-
-It is also a versatile latex that can be used as a ceent odifier for spalled concrete slabs, overhangs, beas, coluns and floors. 
-It is also used as a bonding prier and porosity filler with ZycoSil+ during waterproofing applications.
   `.trim(),
 
-    keyFeatures: [
-      "Sealing & Bonding Agent",
-      "Multipurpose & Economical",
-      "Excellent Wet Adhesion",
-      "Universal Compatibility",
-      "Excellent bonding to cementitious concrete & plaster",
-      "High-performance cement admixture"
-    ],
+  keyFeatures: [
+    "Organosilane Technology",
+    "Reactive, Penetrative & Permanent",
+    "Easy to Apply",
+    "Breathable & UV Resistant",
+    "Protects against Algae and Fungal Growth",
+    "Waterproofs Vertical and Horizontal Surfaces",
+    "Protects Substrate from Deterioration due to Weathering"
+  ],
 
-    specifications: [
-      { label: "Form", value: "Milky White Free Flowing Liquid" },
-      { label: "Viscosity @ 25°C", value: "< 500 cps" },
-      { label: "Specific Gravity", value: "1.01 – 1.02" },
-      { label: "Flash Point", value: "Non Flammable" },
-      { label: "Solid Content", value: "35 ± 1%" },
-      { label: "pH @ 25°C", value: "6 – 7" },
-      { label: "Dilutant", value: "Clean potable water (TDS < 1000 ppm)" }
-    ],
+  specifications: [
+    { label: "Form", value: "Light Pale Yellow Clear Liquid" },
+    { label: "Viscosity @ 25°C", value: "< 100 cps" },
+    { label: "Specific Gravity", value: "0.91 ± 0.01" },
+    { label: "Flash Point", value: "12°C" },
+    { label: "Odour", value: "Low Odour" },
+    { label: "Solubility (in Water)", value: "Easily Soluble" },
+    { label: "pH", value: "Approx. 6 ± 1" },
+    {
+      label: "Dilutant",
+      value: "Clean Potable Water (TDS < 1000 ppm, pH 6.5 – 7)"
+    }
+  ],
 
-    coverage: {
-      horizontal:
-        "24–40 m² using 2L ZycoPrime+ diluted in 21L of 1:20 ZycoSil+ solution",
-      vertical:
-        "60–100 m² using 2L ZycoPrime+ diluted in 21L of 1:20 ZycoSil+ solution",
-      note:
-        "Coverage depends on substrate permeability and surface absorptivity."
-    },
-
-    packing: ["250ml", "1L", "5L", "20L", "35L"]
+  coverage: {
+    horizontal: "24–40 m² (260–430 ft²)",
+    vertical: "60–100 m² (645–1075 ft²)",
+    note:
+      "Actual coverage may vary as it depends upon permeability and absorption characteristics of the substrate."
   },
-  {
-    slug: "zycosil-max",
-    name: "ZycoSil Max",
-    category: "Advanced Penetrative Waterproofing",
-    shortDesc:
-      "New-generation reactive organosilane waterproofing technology with deeper penetration.",
 
-    heroImage: "/waterproofing/zydex-zycosil-max.webp",
+  packing: ["100ml", "250ml", "1L", "5L", "20L"]
+},
+{
+  slug: "zycoprime-plus",
+  name: "ZycoPrime+",
+  category: "Sealing & Bonding Agent",
+  shortDesc:
+    "Acrylic based sealing, bonding & cement admixture agent with excellent wet adhesion.",
 
-    overview: `
-Zycosil Max is a new generation reactive organosilane based water proofing agent that seals nanopores & nano -
-cracks. 
+  heroImage: "/waterproofing/ZycoPrime.jpg",
 
-It is concentrated, highly penetrative & a strong water-repellent. It has an ability to penetrate up to 4 deep
-inside the substrate & becoe an integral part of the structure. Zycosil Max is water dilutable, safe and easy to apply
-by roller & brush. 
-It is non - leachable, UV - resistant, breathable & does not present peel-off issues like conventional
-polyer coatings.
+  overview: `
+ZycoPrime+ is an acrylic co-polymer emulsion supplied as a ready to use bonding agent with
+superior wet adhesion and universal compatibility.
+
+It is also a versatile latex that can be used as a cement modifier for spalled concrete slabs,
+overhangs, beams, columns and floors.
+
+It is also used as a bonding primer and porosity filler with ZycoSil+ during waterproofing
+applications.
   `.trim(),
 
-    keyFeatures: [
-      "Organosilane Technology",
-      "Reactive, Penetrative & Permanent",
-      "Easy to Apply",
-      "Penetrates deep up to 4 mm",
-      "Breathable & UV Resistant",
-      "Protects against algae and fungal growth",
-      "Suitable for horizontal surfaces",
-      "Protects substrate from weathering"
-    ],
+  keyFeatures: [
+    "Sealing & Bonding Agent",
+    "Multipurpose & Economical",
+    "Excellent Wet Adhesion",
+    "Universal Compatibility",
+    "Excellent Bonding to Cementitious Concrete & Plaster Surfaces",
+    "High-performance Cement Admixture"
+  ],
 
-    specifications: [
-      { label: "Form", value: "Pale Yellow Transparent Liquid" },
-      { label: "Viscosity @ 25°C", value: "100 – 500 cps" },
-      { label: "Specific Gravity", value: "1.18 ± 0.01 @ 30°C" },
-      { label: "Flash Point", value: "> 75°C" },
-      { label: "Odour", value: "Slightly Sweet" },
-      { label: "Solubility (in Water)", value: "Easily Soluble" },
-      { label: "pH @ 25°C", value: "Approx. 6 ± 1" },
-      { label: "Dilutant", value: "Clean potable water (TDS < 1000 ppm) pH - 6.5 to 7" }
-    ],
+  specifications: [
+    { label: "Form", value: "Milky White Free Flowing Liquid" },
+    { label: "Viscosity @ 25°C", value: "< 500 cps" },
+    { label: "Specific Gravity", value: "1.01 – 1.02" },
+    { label: "Flash Point", value: "Non Flammable" },
+    { label: "Solid Content", value: "35 ± 1%" },
+    { label: "pH @ 25°C", value: "6 – 7" },
+    { label: "Dilutant", value: "Clean Potable Water (TDS < 1000 ppm)" }
+  ],
 
-    coverage: {
-      horizontal: "24–40 m² (260–430 ft²)",
-      note:
-        "Actual coverage may vary depending on substrate permeability."
-    },
-
-    packing: ["1L", "5L"]
+  coverage: {
+    vertical:
+      "Approx. 60–100 m² (645–1075 ft²) per 2 litres of ZycoPrime+ diluted in a 21 litre solution of 1:20 ZycoSil+",
+    horizontal:
+      "Approx. 24–40 m² (260–430 ft²) per 2 litres of ZycoPrime+ diluted in a 21 litre solution of 1:20 ZycoSil+",
+    note:
+      "Coverage may vary depending upon permeability of the substrate and surface absorptivity."
   },
+
+  packing: ["250ml", "1L", "5L", "20L", "35L"]
+},
+  {
+  slug: "zycosil-max",
+  name: "ZycoSil Max",
+  category: "Advanced Penetrative Waterproofing",
+  shortDesc:
+    "New generation reactive organosilane waterproofing technology with deeper penetration.",
+
+  heroImage: "/waterproofing/zyco-sil-max.webp",
+
+  overview: `
+ZycoSil Max is a new generation reactive organosilane based waterproofing agent that seals
+nanopores and nano-cracks.
+
+It is concentrated, highly penetrative and a strong water-repellent. It has an ability to
+penetrate up to 4 mm deep inside the substrate and becomes an integral part of the structure.
+
+It is water dilutable, safe and easy to apply by roller and brush. It is non-leachable, UV
+resistant, breathable and does not present peel-off issues like conventional polymer coatings.
+  `.trim(),
+
+  keyFeatures: [
+    "Organosilane Technology",
+    "Reactive, Penetrative & Permanent",
+    "Easy to Apply",
+    "Breathable & UV Resistant",
+    "Protects against Algae and Fungal Growth",
+    "Suitable for Horizontal Surfaces Only",
+    "Protects Substrate from Deterioration due to Weathering",
+    "Penetrates Deep up to 4 mm"
+  ],
+
+  specifications: [
+    { label: "Form", value: "Pale Yellow Transparent Liquid" },
+    { label: "Viscosity @ 25°C", value: "100 – 500 cps" },
+    { label: "Specific Gravity", value: "1.18 ± 0.01 @ 30°C" },
+    { label: "Flash Point", value: "> 75°C" },
+    { label: "Odour", value: "Slightly Sweet" },
+    { label: "Solubility (in Water)", value: "Easily Soluble" },
+    { label: "pH @ 25°C", value: "Approx. 6 ± 1" },
+    {
+      label: "Dilutant",
+      value: "Clean Potable Water (TDS < 1000 ppm, pH 6.5 – 7)"
+    }
+  ],
+
+  coverage: {
+    horizontal: "24–40 m² (260–430 ft²)",
+    note:
+      "Actual coverage may vary as it depends upon permeability and absorption characteristics of the substrate."
+  },
+
+  packing: ["1L", "5L"]
+},
   {
     slug: "zycobond-max",
     name: "ZycoBond Max",
@@ -165,7 +163,7 @@ polyer coatings.
     shortDesc:
       "Nano acrylic co-polymer for improved water resistance and bonding strength.",
 
-    heroImage: "/waterproofing/zydex-zycobond-max.webp",
+    heroImage: "/waterproofing/Zycobond-Max.jpg",
 
     overview: `
 ZycoBond Max is a nano acrylic co-polyer (70-90 n priary particle size) for iproved water resistance for
@@ -209,7 +207,7 @@ provides flexible, reactive and water resistant polyer film for long life.
     shortDesc:
       "UV durable acrylic elastomeric membrane with crack-bridging ability.",
 
-    heroImage: "/waterproofing/zydex-elastostretch.webp",
+    heroImage: "/waterproofing/Elastostretch.jpg",
 
     overview: `
 ElastoStretch is a high performance elastomeric roof coating designed to be used along with Zycosil+. 
@@ -249,7 +247,7 @@ topcoat resulting in superior performance.
     shortDesc:
       "High performance PU modified elastomeric membrane with extended service life.",
 
-    heroImage: "/waterproofing/zydex-elastomax-pu.webp",
+    heroImage: "/waterproofing/ElastoMAx.jpg",
 
     overview: `
 ElastoMax PU is a high performance elastomeric roof coating designed to be used along with Zycosil Max. 
@@ -290,7 +288,7 @@ that is a combination of a penetrative barrier with a seamless topcoat resulting
     shortDesc:
       "Elastomeric waterproofing membrane used with grey cement.",
 
-    heroImage: "/waterproofing/zydex-elastosil.webp",
+    heroImage: "/waterproofing/Elastosil.jpg",
 
     overview: `
 Elastosil is a high performance elastoeric membrane for waterproofing on a cracked surface. 
@@ -331,7 +329,7 @@ consistency.
     shortDesc:
       "High performance acrylic based elastomeric membrane for crack bridging.",
 
-    heroImage: "/waterproofing/zydex-elastobar.webp",
+    heroImage: "/waterproofing/Elastobar.jpg",
 
     overview: `
 Elastobar is a high performance elastoeric membrane for crack bridging. 

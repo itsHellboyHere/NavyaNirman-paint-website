@@ -17,22 +17,26 @@ export default function ProductCoveragePacking({ coverage, packing }) {
               <h3>Coverage</h3>
             </div>
 
-            {/* Penetrative products */}
-            {coverage.horizontal || coverage.vertical && (
-              <>
-                <div className={styles.coverageRow}>
-                  <span>Horizontal</span>
-                  <strong>{coverage.horizontal}</strong>
-                </div>
+            {/* PENETRATIVE PRODUCTS (stacked layout) */}
+            {(coverage.horizontal || coverage.vertical) && (
+              <div className={styles.coverageStack}>
+                {coverage.horizontal && (
+                  <div className={styles.coverageBlock}>
+                    <span className={styles.label}>Horizontal</span>
+                    <p className={styles.value}>{coverage.horizontal}</p>
+                  </div>
+                )}
 
-                <div className={styles.coverageRow}>
-                  <span>Vertical</span>
-                  <strong>{coverage.vertical}</strong>
-                </div>
-              </>
+                {coverage.vertical && (
+                  <div className={styles.coverageBlock}>
+                    <span className={styles.label}>Vertical</span>
+                    <p className={styles.value}>{coverage.vertical}</p>
+                  </div>
+                )}
+              </div>
             )}
 
-            {/* Elastomeric membrane products */}
+            {/* ELASTOMERIC MEMBRANE PRODUCTS */}
             {coverage.value && (
               <div className={styles.coverageValue}>
                 <strong>{coverage.value}</strong>
@@ -40,9 +44,7 @@ export default function ProductCoveragePacking({ coverage, packing }) {
             )}
 
             {coverage.note && (
-              <p className={styles.note}>
-                {coverage.note}
-              </p>
+              <p className={styles.note}>{coverage.note}</p>
             )}
           </div>
 

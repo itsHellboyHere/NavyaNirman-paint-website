@@ -8,27 +8,24 @@ import styles from "@/app/css/ProductCTA.module.css";
 export default function ProductCTA({ product }) {
   const [status, setStatus] = useState("idle");
   const pathname = usePathname();
-
-  const category = product?.category?.toLowerCase() || "";
-
-  const isWaterproofing = category.includes("waterproof");
-  const isExterior = category.includes("exterior");
-  const isInterior = category.includes("interior");
+  const isWaterproofing = pathname.includes("/waterproofing");
+  const isExterior = pathname.includes("/exterior");
+  const isInterior = pathname.includes("/interior");
 
   const titleText = "Need expert guidance?";
 
   const descriptionText = isWaterproofing
     ? "Our waterproofing specialists will help you choose the right solution for your application."
     : isExterior
-    ? "Our coating experts will help you select the right exterior paint system for long-term protection."
-    : "Our paint experts will help you choose the perfect finish for your interior spaces.";
+      ? "Our coating experts will help you select the right exterior paint system for long-term protection."
+      : "Our paint experts will help you choose the perfect finish for your interior spaces.";
 
   const whatsappMessage = encodeURIComponent(
     isWaterproofing
       ? `Hi, I'm interested in ${product.name}. Please guide me with the right waterproofing solution.`
       : isExterior
-      ? `Hi, I'm interested in ${product.name}. Please guide me with the right exterior paint system.`
-      : `Hi, I'm interested in ${product.name}. Please guide me with the right interior paint solution.`
+        ? `Hi, I'm interested in ${product.name}. Please guide me with the right exterior paint system.`
+        : `Hi, I'm interested in ${product.name}. Please guide me with the right interior paint solution.`
   );
 
   async function handleSubmit(formData) {
