@@ -15,8 +15,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 6px;
-  
+  gap: 8px;
 }
 
 .logoText {
@@ -27,6 +26,8 @@
   width: 52px;
   height: 44px;
   object-fit: contain;
+  display: block;
+  margin-right: -4px;
 }
 .logoTextWrap {
   position: relative;
@@ -86,7 +87,7 @@
 .navInner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 18px 40px;
+  padding: 16px 36px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -99,7 +100,7 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0; 
   font-family: "Segoe UI", system-ui, sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -245,7 +246,10 @@
   .menuBtn {
     display: block;
   }
-
+  .logoIcon {
+    width: 42px;
+    height: auto;
+  }
   .mobileMenu {
     display: flex;
     flex-direction: column;
@@ -267,6 +271,12 @@
   .mobileLink:hover,
   .mobileActive {
     color: #000;
+  }
+  .logoWrapper{
+    gap: 6px;
+  }
+  .logo{
+    font-size: 16px;
   }
 }
 
