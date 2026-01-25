@@ -13,7 +13,10 @@ export default function Navbar() {
     const [productsOpen, setProductsOpen] = useState(false);
 
     const isContact = pathname === "/contact";
-    const isProducts = pathname.startsWith("/products");
+    const isProducts =
+        pathname === "/products" ||
+        pathname === "/products/interior" ||
+        pathname === "/products/exterior";
 
     /* SCROLL STATE */
     useEffect(() => {
@@ -112,8 +115,8 @@ export default function Navbar() {
                         <Link
                             href="/products/waterproofing"
                             className={`${styles.link} ${pathname.startsWith("/products/waterproofing")
-                                    ? styles.active
-                                    : ""
+                                ? styles.active
+                                : ""
                                 }`}
                         >
                             Waterproofing
@@ -179,8 +182,8 @@ export default function Navbar() {
                     <Link
                         href="/products/waterproofing"
                         className={`${styles.mobileLink} ${pathname.startsWith("/products/waterproofing")
-                                ? styles.mobileActive
-                                : ""
+                            ? styles.mobileActive
+                            : ""
                             }`}
                     >
                         Waterproofing

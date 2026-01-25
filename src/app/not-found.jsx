@@ -17,7 +17,7 @@ export default function NotFound() {
           The surface you’re looking for doesn’t exist or has been repainted.
         </p>
 
-        {/* Action */}
+      
         <Link href="/" className={styles.btn}>
           Back to Home
         </Link>

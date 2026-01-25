@@ -292,6 +292,9 @@
 .productsWrapper {
   position: relative;
 }
+.productsWrapper .link.active {
+  opacity: 0.85;
+}
 .megaMenu {
   position: absolute;
   top: calc(100% + 14px);
