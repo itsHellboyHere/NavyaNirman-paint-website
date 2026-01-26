@@ -19,13 +19,13 @@ const applications = [
     title: "Roofs & Terraces",
     desc: "Advanced waterproofing systems for exposed horizontal surfaces.",
     image: "/products/waterproofing.webp",
-    link: "/waterproofing/roofs",
+    link: "/products/waterproofing",
   },
   {
     title: "Basements & Wet Areas",
     desc: "Protection against dampness, seepage, and water ingress.",
     image: "/applications/basement.webp",
-    link: "/waterproofing/basement",
+    link: "/products/waterproofing",
   },
 ];
 
