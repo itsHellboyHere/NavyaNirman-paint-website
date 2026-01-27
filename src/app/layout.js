@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import { Inter } from "next/font/google";
 import Footer from "./components/Footer";
+import InitialLoader from "./components/InitialLoader";
 
 
 const inter = Inter({
@@ -27,8 +28,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* 'antialiased' makes the font look smoother and more premium */}
+      
       <body className={`${inter.variable} font-sans antialiased`}>
+        <InitialLoader/>
         <Navbar />
         {children}
         <Footer/>
