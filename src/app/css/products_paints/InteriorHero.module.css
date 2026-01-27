@@ -97,3 +97,21 @@
     opacity: 0.6;
   }
 }
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 420px;   
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .desc {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}

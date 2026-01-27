@@ -147,7 +147,9 @@
     .inner {
         grid-template-columns: 1fr;
         gap: 48px;
+        
     }
+
 
     .section {
         padding: 80px 0;
