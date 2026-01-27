@@ -87,7 +87,7 @@ export default function ProductCTA({ product }) {
               <div className={styles.divider}>or</div>
 
               <a
-                href={`https://wa.me/7827332337?text=${whatsappMessage}`}
+                href={`https://wa.me/9810166841?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.whatsapp}

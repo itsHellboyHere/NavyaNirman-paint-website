@@ -52,9 +52,12 @@ export default function Footer() {
         <div className={styles.col}>
           <h4>Contact</h4>
           <ul className={styles.contact}>
-            <li>📞 +91 9XXXXXXXXX</li>
-            <li>✉️ info@navvyanirman.com</li>
-            <li>📍 Serving across India</li>
+            <li>📞 +91 9810166841</li>
+            <li>✉️ gauravjain@navyya.co.in</li>
+            <li >
+                📍 236, New Arya Nagar, Opp. Bajaj Agency,<br/>Ghaziabad, U.P. –  201002
+              </li>
+            {/* <li>📍 Serving across India</li> */}
           </ul>
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { use, useState } from "react";
 import styles from "@/app/css/Contact.module.css";
 import SocialLinks from "./SocialLinks";
 import { sendLead } from "../actions/sendLead";
@@ -9,13 +9,16 @@ import { sendLead } from "../actions/sendLead";
 
 export default function Contact() {
   const [status, setStatus] = useState("idle");
-
+  const [error, setError] = useState("");
   async function handleSubmit(formData) {
     try {
+      setError("");
       setStatus("loading");
       await sendLead(formData);
       setStatus("success");
-    } catch {
+    } catch (err) {
+      // console.error(err);
+      setError(err?.message || "Something went wrong. Please try again.");
       setStatus("error");
     }
   }
@@ -35,20 +38,31 @@ export default function Contact() {
         </header>
 
         <div className={styles.grid}>
+
           {/* LEFT: CONTACT INFO */}
           <div className={styles.info}>
             <div className={styles.card}>
               <h3>Contact</h3>
 
               <p>
-                📞 <a href="tel:+919XXXXXXXXX">+91 9XXXXXXXXX</a>
+                📞 <a href="tel:+919810166841">+91 9810166841</a>
               </p>
 
               <p>
-                ✉️ <a href="mailto:info@navvyanirman.com">info@navvyanirman.com</a>
+                ✉️{" "}
+                <a href="mailto:gauravjain@navyya.co.in">
+                  gauravjain@navyya.co.in
+                </a>
               </p>
 
-              <p>📍 Serving projects across India</p>
+              <p>
+                📍 236, New Arya Nagar, Opp. Bajaj Agency,<br/>
+                Ghaziabad, U.P. –  201002
+              </p>
+
+              <p>
+                Serving residential, commercial, and industrial projects across India
+              </p>
 
               <div className={styles.socials}>
                 <SocialLinks variant="contact" />
@@ -88,9 +102,9 @@ export default function Contact() {
                   {status === "loading" ? "Sending..." : "Request Consultation"}
                 </button>
 
-                {status === "error" && (
+                {status === "error" && error && (
                   <p className={styles.error}>
-                    Something went wrong. Please try again.
+                    {error}
                   </p>
                 )}
               </form>
