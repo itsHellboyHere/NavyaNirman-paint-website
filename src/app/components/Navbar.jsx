@@ -51,7 +51,7 @@ export default function Navbar() {
 
                         <span className={styles.logoTextWrap}>
                             <span className={styles.logoText}>
-                                Navyya<span className={styles.logoSpan}>Nirman</span>
+                                Navyya<span className={styles.logoSpan}> Nirman</span>
                             </span>
 
                             {/* DRIP */}

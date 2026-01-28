@@ -10,12 +10,12 @@ export default function Footer() {
         <div className={styles.col}>
           <div className={styles.brandWrap}>
             <img
-              src="/brand/logo-icon.png"
+              src="/brand/logo-full.png"
               alt="Navvya Nirman Company logo"
               className={styles.brandLogo}
             />
             <h3 className={styles.brand}>
-              Navyya<span>Nirman</span>
+              Navyya<span> Nirman</span>
             </h3>
           </div>
           <p className={styles.desc}>

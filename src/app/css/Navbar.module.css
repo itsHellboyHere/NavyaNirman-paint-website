@@ -19,10 +19,16 @@
 }
 
 .logoText {
-  position: relative;
-  z-index: 2;
-  margin-left: -5px;
+  font-family: var(--font-cinzel);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1f2937; /* deep neutral, matches logo ink */
+  line-height: 1;
 }
+
+
 .logoIcon {
   width: 52px;
   height: 44px;
@@ -113,8 +119,8 @@
 }
 
 
-.logoSpan{
-  color: var(--color-accent-deep);
+.logoSpan {
+  color: #1f2937;
 }
 /* =====================
    DESKTOP LINKS

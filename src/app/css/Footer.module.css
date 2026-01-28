@@ -59,27 +59,31 @@
 ===================== */
 
 .brand {
-  font-size: 20px;
+  font-family: var(--font-cinzel);
+  font-size: 19px;         
   font-weight: 600;
-  color: var(--color-text);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1f2937;
   margin-left: -6px;
+  line-height: 1.05;        
 }
 
 .brand span {
-  color: var(--color-accent-deep);
+  color: inherit; /* SAME color as Navyya */
 }
 .brandWrap {
   display: flex;
   align-items: center;
-  gap: 0px;
-  margin-bottom: 8px;
+  gap: 6px;
+  margin-bottom: 10px;
  
 }
 
 .brandLogo {
   
-  width: 46px;
-  height: 40px;
+  width: auto;
+  height: 48px;
   object-fit: contain;
 }
 
@@ -159,5 +163,9 @@
   .brandLogo {
     width: 32px;
     height: 32px;
+  }
+  .brand {
+    font-size: 16px;
+    letter-spacing: 0.12em;
   }
 }

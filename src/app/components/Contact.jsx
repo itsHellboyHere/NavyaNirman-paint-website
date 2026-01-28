@@ -42,7 +42,7 @@ export default function Contact() {
           {/* LEFT: CONTACT INFO */}
           <div className={styles.info}>
             <div className={styles.card}>
-              <h3>Contact</h3>
+              <h3>Contact Us</h3>
 
               <p>
                 📞 <a href="tel:+919810166841">+91 9810166841</a>
