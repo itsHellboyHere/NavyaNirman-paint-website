@@ -20,11 +20,16 @@ const cinzel = Cinzel({
 
 export const metadata = {
   metadataBase: new URL("https://navyya.co.in"),
+
   title: {
     default: "Navyya Nirman Company",
     template: "%s | Navyya Nirman",
   },
+
   description: "Paint & Waterproofing Solutions",
+
+  manifest: "/manifest.json",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }) {
