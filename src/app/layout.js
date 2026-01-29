@@ -25,14 +25,6 @@ export const metadata = {
     template: "%s | Navyya Nirman",
   },
   description: "Paint & Waterproofing Solutions",
-  icons: {
-    icon: [
-      { url: "/brand/favicon.ico" },
-      { url: "/brand/favicon.svg", type: "image/svg+xml" },
-    ],
-    apple: "/brand/apple-touch-icon.png",
-  },
-  manifest: "/brand/site.webmanifest",
 };
 
 export default function RootLayout({ children }) {
