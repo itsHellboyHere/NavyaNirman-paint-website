@@ -19,7 +19,7 @@ export const metadata = {
     title: "Exterior Paints | Navyya Nirman",
     description:
       "Premium exterior paint systems offering long-term protection, breathability, and refined mineral finishes.",
-    url:"https://navyya.co.in/products/exterior",
+    url:"https://navyyanirman.com/products/exterior",
     siteName: "Navyya Nirman",
     locale: "en_IN",
     type: "website",

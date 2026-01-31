@@ -23,7 +23,7 @@ export const metadata = {
     title: "Waterproofing | Navvya Nirman",
     description:
       "High-performance waterproofing products and systems designed for durability and long-term protection.",
-    url:"https://navyya.co.in/waterproofing",
+    url:"https://navyyanirman.com/products/waterproofing",
     siteName: "Navvya Nirman",
     locale: "en_IN",
     type: "website",

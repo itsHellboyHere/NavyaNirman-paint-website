@@ -19,7 +19,7 @@ const cinzel = Cinzel({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://navyya.co.in"),
+ metadataBase: new URL("https://navyyanirman.com"),
 
   title: {
     default: "Navyya Nirman Company",

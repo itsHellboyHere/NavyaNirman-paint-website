@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://navyya.co.in";
+  const baseUrl = "https://navyyanirman.com";
 
   return [
     {

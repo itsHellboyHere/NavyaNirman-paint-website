@@ -18,7 +18,7 @@ export const metadata = {
     title: "Interior Paints | Navyya Nirman",
     description:
       "Explore premium interior paints and primers crafted for smooth, durable and elegant wall finishes.",
-    url: "https://navyya.co.in/products/interior",
+  url:"https://navyyanirman.com/products/interior",
     siteName: "Navyya Nirman",
     locale: "en_IN",
     type: "website",
