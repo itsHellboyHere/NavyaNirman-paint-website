@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const socials = [
   { name: "Instagram", icon: FiInstagram, href: "#" },
   { name: "Facebook", icon: FiFacebook, href: "#" },
-  { name: "WhatsApp", icon: FaWhatsapp, href: "https://wa.me/XXXXXXXXXX" },
+  { name: "WhatsApp", icon: FaWhatsapp, href: "https://wa.me/8527555909" },
 ];
 
 export default function SocialLinks({ variant = "footer" }) {

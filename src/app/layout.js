@@ -4,6 +4,7 @@ import { Inter , Cinzel} from "next/font/google";
 import Footer from "./components/Footer";
 // import InitialLoader from "./components/InitialLoader";
 import { Metadata } from "next";
+import WhatsAppFloat from "./components/WhatsAppFloat";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         {/* <InitialLoader/> */}
         <Navbar />
         {children}
+        <WhatsAppFloat/>
         <Footer/>
       </body>
     </html>
