@@ -7,7 +7,7 @@ import {
 } from "react-icons/hi2";
 
 export default function ExteriorProductApplication({ product }) {
-  if (!product.application && !product.coverage) return null;
+  if (!product.application && !product.coverage && !product.packing?.length) return null;
 
   return (
     <section className={styles.section} id="application">

@@ -138,6 +138,47 @@ responsibility of the applicator.`.trim(),
     },
 
     {
+        slug: "nivo",
+        name: "Nivo",
+        category: "Interior Paint",
+        type: "Interior Organo-Silicate Paint",
+
+        highlights: [
+            "Smell Free",
+            "Fire Resistant Class A",
+            "Bright Matt Finish",
+            "Anti-Fungal Protection"
+        ],
+
+        performance: "6 Years Warranty*",
+
+        description: `
+Nivo is an interior paint based on a novel organo-silicate binder with a bright matt finish.
+
+It is extremely low in VOCs and offers a smell-free painting experience with quick turnaround time.
+
+It is Class A fire resistant as per ASTM E84, offering safe and healthy interior spaces for your home.
+There are spaces that simply look beautiful, and then there are spaces that feel good to come home to.
+Suited for living rooms & bedrooms, offices & commercial spaces, and kitchen & utility spaces.
+    `.trim(),
+
+        keyFeatures: [
+            "Smell Free",
+            "Fire Resistant Class A (ASTM E84)",
+            "Bright Matt Finish",
+            "Anti-Fungal Protection",
+            "Extremely Low VOC",
+            "No Added Solvents or Plasticisers",
+            "Quick Turnaround Time",
+            "6 Years Warranty on Colour Fading"
+        ],
+
+        packing: ["1L", "4L", "20L"],
+
+        image: "/interior/nivo.webp"
+    },
+
+    {
         slug: "premium-wall-primer",
         name: "Premium Wall Primer",
         category: "Primer",

@@ -51,8 +51,16 @@ export default function Page() {
         image="/interior/luxury.webp"
       />
       <InteriorProduct
-      slug="premium-wall-primer"
+        slug="nivo"
         align="left"
+        title="Nivo"
+        subtitle="Smell-free organo-silicate paint with a bright matt finish"
+        description="Nivo is an interior paint built on a novel organo-silicate binder that creates a bright matt finish through micro light-scattering. Extremely low in VOCs with no added solvents or plasticisers, it offers a completely smell-free painting experience and quick turnaround. Class A fire resistant as per ASTM E84 with added antifungal protection, Nivo creates safe, healthy spaces that feel good to come home to — backed by a 6-year warranty on colour fading."
+        image="/interior/nivo-hero.webp"
+      />
+      <InteriorProduct
+      slug="premium-wall-primer"
+        align="right"
         title="Premium Wall Primer"
         subtitle="The essential base for flawless interior finishes"
         description="Premium Wall Primer is a water-based acrylic primer designed to prepare interior surfaces for long-lasting paint performance. It ensures uniform absorption, improves paint adhesion, and creates a smooth, consistent base—allowing top coats to achieve their true finish and durability."

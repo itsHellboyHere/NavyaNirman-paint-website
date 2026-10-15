@@ -67,6 +67,22 @@ export default function Page() {
         description="Xtend Brick is a ready-to-apply exterior paint designed to replicate the natural appearance of brick surfaces. Ideal for old brick facades and decorative masonry, it preserves the inherent breathability of bricks while providing protection against weathering elements. Its ultra-matt finish and authentic brick tone deliver a classic aesthetic that cannot be achieved with conventional acrylic paints, backed by a 7-year performance warranty."
         image="/exterior/xtend-brick-hero.webp"
       />
+      <ExteriorProduct
+        slug="drio-max"
+        align="left"
+        title="Drio Max"
+        subtitle="Dust-repellent exterior paint with MineraTek"
+        description="Drio Max is an exterior emulsion paint powered by MineraTek, a proprietary mineral technology delivering best-in-class water repellency and excellent breathability. Its engineered hydrophobic pore structure lets trapped moisture escape while stopping rainwater from seeping into walls, and its advanced mineral formula creates exceptional surface hardness that repels dust and keeps facades cleaner for longer. Backed by a 6-year warranty on film integrity and fading."
+        image="/exterior/drio-max-hero.webp"
+      />
+      <ExteriorProduct
+        slug="drio"
+        align="right"
+        title="Drio"
+        subtitle="Everyday exterior protection with MineraTek"
+        description="Drio is an everyday exterior emulsion paint built for homeowners who want proven, worry-free protection. Powered by MineraTek mineral technology, it combines best-in-class water repellency with excellent breathability, letting walls release trapped moisture while keeping wind-driven rain out. Added controlled-release antifungal agents help prevent dampness, peeling and fungal growth, backed by a 4-year warranty on film integrity and fading."
+        image="/exterior/drio-hero.webp"
+      />
     </>
   )
 }

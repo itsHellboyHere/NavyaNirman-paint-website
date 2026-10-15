@@ -245,5 +245,84 @@ Cover all surfaces that are not to be painted, in particular those that are non-
     packing: ["1L", "4L", "20L"],
 
     image: "/exterior/xtend-brick.webp"
+  },
+  {
+    slug: "drio-max",
+    name: "Drio Max",
+    category: "Exterior Paint",
+    type: "Exterior Paint with MineraTek",
+
+    highlights: [
+      "Waterproof",
+      "Breathable",
+      "Dust Repellent",
+      "6 Years Warranty"
+    ],
+
+    performance: "6 Years Warranty*",
+
+    description: `
+Drio Max is an exterior emulsion paint with MineraTek, a proprietary mineral technology that offers best-in-class water repellency and excellent breathability.
+
+Its uniquely engineered hydrophobic pore structure allows trapped moisture to escape easily through evaporation, while preventing the capillary uptake of rainwater into the walls, helping keep them dry all year round.
+
+Its advanced mineral formula delivers exceptional surface hardness, helping repel dust and keep walls cleaner for longer.
+Suited for residential exteriors, commercial buildings, high-exposure & coastal facades, and renovation & repainting projects.
+    `.trim(),
+
+    keyFeatures: [
+      "Waterproof",
+      "Breathable",
+      "Dust Repellent",
+      "MineraTek Mineral Technology",
+      "Best-in-Class Water Repellency",
+      "Prevents Capillary Rainwater Uptake",
+      "High Surface Hardness",
+      "6 Years Warranty on Film Integrity & Fading"
+    ],
+
+    packing: ["1L", "4L", "20L"],
+
+    image: "/exterior/drio-max.webp"
+  },
+
+  {
+    slug: "drio",
+    name: "Drio",
+    category: "Exterior Paint",
+    type: "Exterior Paint with MineraTek",
+
+    highlights: [
+      "Waterproof",
+      "Breathable",
+      "Anti-Fungal Protection",
+      "4 Years Warranty"
+    ],
+
+    performance: "4 Years Warranty*",
+
+    description: `
+Drio is an everyday exterior emulsion paint, built for homeowners who want proven, worry-free protection without compromise.
+
+Powered by MineraTek, a proprietary mineral technology, Drio offers best-in-class water repellency and excellent breathability.
+
+Its uniquely engineered hydrophobic pore structure allows trapped moisture to escape through evaporation, while preventing the capillary uptake of rainwater into the walls, helping keep them dry and protected all year round.
+Suited for residential exteriors, commercial buildings, high-exposure & coastal facades, and renovation & repainting projects.
+    `.trim(),
+
+    keyFeatures: [
+      "Waterproof",
+      "Breathable",
+      "Anti-Fungal Protection",
+      "MineraTek Mineral Technology",
+      "Best-in-Class Water Repellency",
+      "Prevents Capillary Rainwater Uptake",
+      "Controlled-Release Antifungal Agents",
+      "4 Years Warranty on Film Integrity & Fading"
+    ],
+
+    packing: ["1L", "4L", "20L"],
+
+    image: "/exterior/drio.webp"
   }
 ];
